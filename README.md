@@ -113,10 +113,10 @@ Completo**.
 2.  Acessar a página de cadastro;
 3.  Deixar o campo **Nome Completo** vazio;
 4.  Preencher os outros campos:
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste.com"
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste.com"
+    - **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -141,10 +141,10 @@ O sistema permite criar uma conta sem preencher o campo telefone.
 2.  Acessar a página de cadastro;
 3.  Deixar o campo **Telefone** vazio;
 4.  Preencher os outros campos:
-**Nome Completo** - "Leonardo Pattussi"
-**Email** - "teste@teste.com"
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Nome Completo** - "Leonardo Pattussi"
+    - **Email** - "teste@teste.com"
+    - **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -170,10 +170,10 @@ O sistema permite criar uma conta sem preencher o campo email.
 2.  Acessar a página de cadastro;
 3.  Deixar o campo **Email** vazio;
 4.  Preencher os outros campos:
-**Nome completo** - "Leonardo Pattussi"
-**Telefone** - (55)98798-2354
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Nome completo** - "Leonardo Pattussi"
+    - **Telefone** - (55)98798-2354
+    - **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -198,9 +198,9 @@ O sistema permite criar conta sem definir uma senha.
 2.  Acessar a página de cadastro;
 3.  Deixar o campo **Senha** vazio;
 4.  Preencher os outros campos:
-**Nome completo** - "Leonardo Pattussi"
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste.com"
+    - **Nome completo** - "Leonardo Pattussi"
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste.com"
 5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -224,11 +224,11 @@ O sistema permite criar múltiplas contas utilizando o mesmo email.
 1.  Acessar o “microssistema”;
 2.  Acessar a página de cadastro;
 3.  Preencher os campos:
-**Nome completo** - "Leonardo Pattussi"
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste.com"
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Nome completo** - "Leonardo Pattussi"
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste.com"
+    - **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 4.  Clicar em **Criar Conta**.
 5.  Voltar para a tela de cadastro;
 6.  Criar nova conta com o mesmo email.
@@ -255,11 +255,11 @@ O campo de email aceita valores que não seguem o padrão de email válido.
 1.  Acessar o “microssistema”;
 2.  Acessar a página de cadastro;
 3.  Preencher os campos:
-**Nome completo** - "Leonardo Pattussi"
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste"
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Nome completo** - "Leonardo Pattussi"
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste"
+    - **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -283,11 +283,11 @@ O sistema aceita senhas muito simples e curtas.
 1.  Acessar o “microssistema”;
 2.  Acessar a página de cadastro;
 3.  Preencher os campos:
-**Nome completo** - "Leonardo Pattussi"
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste.com"
-**Senha** - 123
-**Confirmar senha** - 123
+    - **Nome completo** - "Leonardo Pattussi"
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste.com"
+    - **Senha** - 123
+    - **Confirmar senha** - 123
 4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
@@ -317,11 +317,11 @@ aceitos como válidos.
 1.  Acessar o “microssistema”;
 2.  Acessar a página de cadastro;
 3.  Preencher os campos:
-**Nome completo** - "______________"
-**Telefone** - (55)98798-2354
-**Email** - "teste@teste.com"
-**Senha** - 1234567!
-**Confirmar senha** - 1234567!
+    - **Nome completo** - "______________"
+    - **Telefone** - (55)98798-2354
+    - **Email** - "teste@teste.com"
+    -  **Senha** - 1234567!
+    - **Confirmar senha** - 1234567!
 4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
