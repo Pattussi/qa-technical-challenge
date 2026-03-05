@@ -29,10 +29,10 @@ Durante os testes exploratórios foram identificados **9 problemas** no
 sistema.
 
   Severidade - Quantidade  
-  Crítico - 3
-  Alto  - 3
-  Médio - 3
-  Baixo - 0
+  - Crítico - 3
+  - Alto  - 3
+  - Médio - 3
+  - Baixo - 0
 
 A maioria dos problemas encontrados está relacionada à **falta de
 validação de dados no formulário de cadastro**, permitindo a criação de
