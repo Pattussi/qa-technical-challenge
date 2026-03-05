@@ -1,4 +1,4 @@
-# Teste Técnico -- QA Tester
+# Teste Técnico - QA Tester
 
 Este repositório contém o relatório de análise exploratória do
 microssistema disponibilizado no teste técnico para a vaga de **QA
@@ -28,12 +28,11 @@ Realizar uma análise exploratória do sistema com foco em:
 Durante os testes exploratórios foram identificados **9 problemas** no
 sistema.
 
-  Severidade   Quantidade
-  ------------ ------------
-  Crítico      3
-  Alto         3
-  Médio        3
-  Baixo        0
+  Severidade - Quantidade  
+  Crítico - 3
+  Alto  - 3
+  Médio - 3
+  Baixo - 0
 
 A maioria dos problemas encontrados está relacionada à **falta de
 validação de dados no formulário de cadastro**, permitindo a criação de
@@ -46,7 +45,7 @@ contas com informações incompletas ou inválidas.
 Os testes foram realizados no seguinte ambiente:
 
 -   Sistema Operacional: Windows
--   Navegador: Google Chrome
+-   Navegador: Google Chrome 145.x
 -   Tipo de teste: Teste exploratório manual
 
 ------------------------------------------------------------------------
@@ -77,7 +76,7 @@ Durante a análise foram encontrados problemas nas seguintes categorias:
 
 # Bugs Encontrados
 
-## Bug 1 --- Sistema permite criar conta sem preencher os campos obrigatórios
+## Bug 1 - Sistema permite criar conta sem preencher os campos obrigatórios
 
 **Descrição**\
 O sistema permite criar uma conta mesmo quando nenhum campo do
@@ -85,9 +84,10 @@ formulário é preenchido.
 
 **Passos para reproduzir**
 
-1.  Acessar a página de cadastro\
-2.  Não preencher nenhum campo\
-3.  Clicar em **Criar Conta**
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Não preencher nenhum campo;
+4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 A conta é criada mesmo com todos os campos vazios.
@@ -101,7 +101,7 @@ campos são obrigatórios.
 
 ------------------------------------------------------------------------
 
-## Bug 2 --- Campo "Nome Completo" não é obrigatório
+## Bug 2 - Campo "Nome Completo" não é obrigatório
 
 **Descrição**\
 O sistema permite finalizar o cadastro sem preencher o campo **Nome
@@ -109,10 +109,15 @@ Completo**.
 
 **Passos para reproduzir**
 
-1.  Acessar a tela de cadastro\
-2.  Preencher os outros campos\
-3.  Deixar **Nome Completo** vazio\
-4.  Clicar em **Criar Conta**
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Deixar o campo **Nome Completo** vazio;
+4.  Preencher os outros campos:
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste.com"
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 Conta criada normalmente.
@@ -125,17 +130,22 @@ O sistema deve exigir o preenchimento do nome completo.
 
 ------------------------------------------------------------------------
 
-## Bug 3 --- Campo "Telefone" não é obrigatório
+## Bug 3 - Campo "Telefone" não é obrigatório
 
 **Descrição**\
 O sistema permite criar uma conta sem preencher o campo telefone.
 
 **Passos para reproduzir**
 
-1.  Acessar cadastro\
-2.  Preencher os outros campos\
-3.  Deixar o campo **Telefone** vazio\
-4.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Deixar o campo **Telefone** vazio;
+4.  Preencher os outros campos:
+**Nome Completo** - "Leonardo Pattussi"
+**Email** - "teste@teste.com"
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 Cadastro realizado com sucesso.
@@ -149,17 +159,22 @@ opcional.
 
 ------------------------------------------------------------------------
 
-## Bug 4 --- Campo Email não possui validação obrigatória
+## Bug 4 - Campo Email não possui validação obrigatória
 
 **Descrição**\
 O sistema permite criar uma conta sem preencher o campo email.
 
 **Passos para reproduzir**
 
-1.  Acessar cadastro\
-2.  Preencher outros campos\
-3.  Deixar o campo **Email** vazio\
-4.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Deixar o campo **Email** vazio;
+4.  Preencher os outros campos:
+**Nome completo** - "Leonardo Pattussi"
+**Telefone** - (55)98798-2354
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 Conta criada sem email.
@@ -172,17 +187,21 @@ O sistema deve exigir um email válido para cadastro.
 
 ------------------------------------------------------------------------
 
-## Bug 5 --- Campo Senha não é obrigatório
+## Bug 5 - Campo Senha não é obrigatório
 
 **Descrição**\
 O sistema permite criar conta sem definir uma senha.
 
 **Passos para reproduzir**
 
-1.  Acessar cadastro\
-2.  Preencher outros campos\
-3.  Deixar o campo **Senha** vazio\
-4.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Deixar o campo **Senha** vazio;
+4.  Preencher os outros campos:
+**Nome completo** - "Leonardo Pattussi"
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste.com"
+5.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 Conta criada sem senha.
@@ -195,16 +214,24 @@ O sistema deve exigir senha para criação da conta.
 
 ------------------------------------------------------------------------
 
-## Bug 6 --- Sistema permite cadastro com email já existente
+## Bug 6 - Sistema permite cadastro com email já existente
 
 **Descrição**\
 O sistema permite criar múltiplas contas utilizando o mesmo email.
 
 **Passos para reproduzir**
 
-1.  Criar uma conta com um email\
-2.  Voltar para a tela de cadastro\
-3.  Tentar criar nova conta com o mesmo email
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Preencher os campos:
+**Nome completo** - "Leonardo Pattussi"
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste.com"
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+4.  Clicar em **Criar Conta**.
+5.  Voltar para a tela de cadastro;
+6.  Criar nova conta com o mesmo email.
 
 **Resultado atual**\
 O sistema permite o cadastro duplicado.
@@ -218,16 +245,22 @@ usuário.
 
 ------------------------------------------------------------------------
 
-## Bug 7 --- Sistema aceita email em formato inválido
+## Bug 7 - Sistema aceita email em formato inválido
 
 **Descrição**\
 O campo de email aceita valores que não seguem o padrão de email válido.
 
 **Passos para reproduzir**
 
-1.  Acessar cadastro\
-2.  Inserir no campo email: teste ou teste@teste\
-3.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Preencher os campos:
+**Nome completo** - "Leonardo Pattussi"
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste"
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 O sistema aceita o email inválido.
@@ -240,16 +273,22 @@ O sistema deve validar o formato do email.
 
 ------------------------------------------------------------------------
 
-## Bug 8 --- Sistema permite senha fraca
+## Bug 8 - Sistema permite senha fraca
 
 **Descrição**\
 O sistema aceita senhas muito simples e curtas.
 
 **Passos para reproduzir**
 
-1.  Acessar cadastro\
-2.  Inserir senha como: 1 ou 123\
-3.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Preencher os campos:
+**Nome completo** - "Leonardo Pattussi"
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste.com"
+**Senha** - 123
+**Confirmar senha** - 123
+4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 Cadastro realizado.
@@ -267,7 +306,7 @@ Exemplo:
 
 ------------------------------------------------------------------------
 
-## Bug 9 --- Sistema aceita campos com apenas espaços
+## Bug 9 - Sistema aceita campos com apenas espaços
 
 **Descrição**\
 Campos podem ser preenchidos apenas com espaços e ainda assim serem
@@ -275,9 +314,15 @@ aceitos como válidos.
 
 **Passos para reproduzir**
 
-1.  No campo nome inserir apenas espaços\
-2.  Preencher os outros campos\
-3.  Criar conta
+1.  Acessar o “microssistema”;
+2.  Acessar a página de cadastro;
+3.  Preencher os campos:
+**Nome completo** - "______________"
+**Telefone** - (55)98798-2354
+**Email** - "teste@teste.com"
+**Senha** - 1234567!
+**Confirmar senha** - 1234567!
+4.  Clicar em **Criar Conta**.
 
 **Resultado atual**\
 O sistema aceita o cadastro.
@@ -293,12 +338,12 @@ entrada.
 
 # Bugs Prioritários
 
-## 1 --- Criação de conta sem campos obrigatórios
+## 1 - Criação de conta sem campos obrigatórios
 
 Esse problema compromete a integridade dos dados do sistema, permitindo
 a criação de usuários inválidos.
 
-## 2 --- Cadastro com email duplicado
+## 2 - Cadastro com email duplicado
 
 O email normalmente funciona como identificador único do usuário.
 Permitir duplicidade pode causar:
@@ -348,7 +393,7 @@ Aplicar formatação automática para facilitar o preenchimento.
 
 Exemplo:
 
-(0) 00000-0000
+(00) 00000-0000
 
 ### Verificação de email
 
@@ -369,3 +414,13 @@ integridade dos dados e usabilidade do sistema**.
 Este relatório foi elaborado a partir de testes exploratórios com foco
 na identificação de falhas funcionais, problemas de validação de dados e
 melhorias de experiência do usuário.
+
+---
+
+## ✨ Sobre o autor
+
+Sou **Leonardo Pattussi**, profissional em transição para **Qualidade de Software (QA)**.  
+Após 12 anos na área comercial, concluí o **Bootcamp QA da TripleTen**, aplicando minha experiência analítica e de processos na garantia de qualidade de produtos digitais.
+
+📫 Contato: [pattussi@hotmail.com](mailto:pattussi@hotmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/leonardo-pattussi)
