@@ -1,8 +1,7 @@
 # Teste Técnico - QA Tester
 
 Este repositório contém o relatório de análise exploratória do
-microssistema disponibilizado no teste técnico para a vaga de **QA
-Tester**.
+microssistema disponibilizado no teste técnico para a vaga de **Analisa de Testes / QA Jr**.
 
 O objetivo da análise foi identificar **bugs funcionais**,
 **inconsistências de experiência do usuário**, **possíveis problemas de
@@ -74,6 +73,18 @@ Durante a análise foram encontrados problemas nas seguintes categorias:
 
 ------------------------------------------------------------------------
 
+##  Demonstração dos Bugs
+
+Durante os testes foram gravados vídeos demonstrando a reprodução de
+cada bug encontrado.
+
+As gravações foram realizadas utilizando **Loom**, permitindo visualizar
+claramente o comportamento do sistema durante a reprodução dos erros.
+
+Os links para vizualização estão disponíveis dentro da descriçãode cada bug reportado.
+
+------------------------------------------------------------------------
+
 # Bugs Encontrados
 
 ## Bug 1 - Sistema permite criar conta sem preencher os campos obrigatórios
@@ -88,6 +99,8 @@ formulário é preenchido.
 2.  Acessar a página de cadastro;
 3.  Não preencher nenhum campo;
 4.  Clicar em **Criar Conta**.
+   
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/47b26df58c694d47ba23e2cbb0980c74)
 
 **Resultado atual**\
 A conta é criada mesmo com todos os campos vazios.
@@ -119,8 +132,10 @@ Completo**.
     - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/816b2d100b9c4eafa618761256ebc8b4)
+
 **Resultado atual**\
-Conta criada normalmente.
+Conta criada com sucesso.
 
 **Resultado esperado**\
 O sistema deve exigir o preenchimento do nome completo.
@@ -147,8 +162,10 @@ O sistema permite criar uma conta sem preencher o campo telefone.
     - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/58286e85db1f40a5ad7757f3796e2f34)
+
 **Resultado atual**\
-Cadastro realizado com sucesso.
+Conta criada com sucesso.
 
 **Resultado esperado**\
 O sistema deve exigir o preenchimento ou informar que o campo é
@@ -176,6 +193,8 @@ O sistema permite criar uma conta sem preencher o campo email.
     - **Confirmar senha** - 1234567!
 5.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/7aebc47c65e94f0e8d55fbf701521274)
+
 **Resultado atual**\
 Conta criada sem email.
 
@@ -202,6 +221,8 @@ O sistema permite criar conta sem definir uma senha.
     - **Telefone** - (55)98798-2354
     - **Email** - "teste@teste.com"
 5.  Clicar em **Criar Conta**.
+
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/9e5e4520acfe4266b8f2ee2c629a664a)
 
 **Resultado atual**\
 Conta criada sem senha.
@@ -233,6 +254,8 @@ O sistema permite criar múltiplas contas utilizando o mesmo email.
 5.  Voltar para a tela de cadastro;
 6.  Criar nova conta com o mesmo email.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/4a04beba4f2241338ddcc1c4c1440b9b)
+
 **Resultado atual**\
 O sistema permite o cadastro duplicado.
 
@@ -262,8 +285,10 @@ O campo de email aceita valores que não seguem o padrão de email válido.
     - **Confirmar senha** - 1234567!
 4.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/5946b28680854bfbb5d2fc1bfd063c93)
+
 **Resultado atual**\
-O sistema aceita o email inválido.
+O sistema aceita o email inválido e conta é criada com sucesso.
 
 **Resultado esperado**\
 O sistema deve validar o formato do email.
@@ -290,8 +315,10 @@ O sistema aceita senhas muito simples e curtas.
     - **Confirmar senha** - 123
 4.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/f9dcbb28264741ec81cabb0c4720ab9a)
+
 **Resultado atual**\
-Cadastro realizado.
+Conta criada com sucesso.
 
 **Resultado esperado**\
 O sistema deveria exigir regras mínimas de segurança para senha.
@@ -324,8 +351,10 @@ aceitos como válidos.
     - **Confirmar senha** - 1234567!
 4.  Clicar em **Criar Conta**.
 
+🎥 Vídeo: [Assistir demonstração do bug](https://www.loom.com/share/722a8285c291492b880ae416a761dd57)
+
 **Resultado atual**\
-O sistema aceita o cadastro.
+Conta criada com sucesso.
 
 **Resultado esperado**\
 O sistema deve remover espaços antes da validação e impedir esse tipo de
